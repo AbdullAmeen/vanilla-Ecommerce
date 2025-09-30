@@ -1,52 +1,7 @@
- # 🛒 E-Commerce Website (Frontend Only)
+ # E-Commerce Website (Frontend Only)
 
 This is a **simple e-commerce website** built with **HTML, CSS, JavaScript, and JSON only**.  
 It does **not use any frameworks or backend**, making it a perfect learning project for frontend development.
-
----
-
-## 📂 Folder Structure
-ecommerce-website/
-│
-├── index.html           # Home page (banner, featured products)
-├── shop.html            # Product listing page
-├── product.html         # Single product details page
-├── cart.html            # Shopping cart
-├── checkout.html        # Checkout form
-├── login.html           # Login page
-├── signup.html          # Signup page
-│
-├── css/              # Stylesheets
-│ ├── style.css         # Global styles (header, footer, buttons)
-│ ├── home.css          # Styles for home page
-│ ├── shop.css          # Styles for shop page
-│ ├── product.css       # Styles for product page
-│ ├── auth.css          # Styles for login/signup forms
-│ └── cart.css          # Styles for cart & checkout
-│
-├── js/               # JavaScript logic
-│ ├── main.js           # Navbar, footer, common scripts
-│ ├── shop.js           # Loads products from JSON into shop.html
-│ ├── product.js        # Shows product details (via ?id= in URL)
-│ ├── cart.js           # Manages cart (add/remove items, totals)
-│ ├── checkout.js       # Checkout form validation
-│ ├── auth.js           # Login & signup logic (localStorage)
-│ └── utils.js          # Helper functions (e.g., format price)
-│
-├── data/               # JSON data (acts like a fake backend)
-│ ├── products.json     # Product database
-│ └── users.json        # Dummy users for login
-│
-├── images/           # Images
-│ ├── logo.png
-│ ├── banner.jpg
-│ └── products/
-│ ├── shoe1.jpg
-│ ├── shoe2.jpg
-│ └── ...
-│
-└── README.md        # Project documentation
-
 
 ---
 
@@ -77,7 +32,7 @@ ecommerce-website/
 
 ---
 
-## 📌 Notes
+## Notes
 
 - This project is for **learning purposes only**.  
 - There is **no backend** (no database, no authentication server).  
@@ -86,7 +41,7 @@ ecommerce-website/
 
 ---
 
-## 🏗️ How to Run
+## How to Run
 
 1. Download or clone this repo.  
 2. Open `index.html` in your browser.  
@@ -97,7 +52,7 @@ ecommerce-website/
 
 ---
 
-## 📖 Learning Goals
+## Learning Goals
 
 - Practice **HTML, CSS, JS** structure.  
 - Learn to use **JSON** as fake data.  
