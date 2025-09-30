@@ -4,15 +4,12 @@ ecommerce-website/
 ├── shop.html        # Product listing page 
 ├── product.html     # Single product details page 
 ├── cart.html        # Shopping cart 
-├── checkout.html    # Checkout form 
-├── login.html       # Login page 
-├── signup.html      # Signup page 
 │ 
 ├── css/          # Stylesheets 
 │ ├── style.css      # Global styles (header ,footer , buttons) 
 │ ├── home.css       # Styles for home page 
-│ ├── shop.css       # Styles for shop page │ ├── product.css # Styles for product page 
-│ ├── auth.css       # Styles for login/signup forms 
+│ ├── shop.css       # Styles for shop page 
+│ ├── product.css # Styles for product page 
 │ └── cart.css       # Styles for cart & checkout 
 │ 
 ├── js/           # JavaScript logic 
@@ -20,13 +17,9 @@ ecommerce-website/
 │ ├── shop.js        # Loads products from JSON into shop.html
 │ ├── product.js     # Shows product details (via ?id= in URL) 
 │ ├── cart.js        # Manages cart (add/remove items, totals) 
-│ ├──checkout.js     # Checkout form validation 
-│ ├── auth.js        # Login & signup logic (local Storage) 
-│ └── utils.js       # Helper functions (e.g., format price) 
-│ 
+│
 ├── data/         # JSON data (acts like a fake backend) 
 │ ├── products.json  # Product database
-│ └── users.json     # Dummy users for login 
 │ 
 ├── images/       # Images 
 │ ├── logo.png 
