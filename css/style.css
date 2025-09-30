@@ -21,10 +21,11 @@ body {
   width: 100vw;
   min-width: 100vh;
   padding-bottom: 300px; /* footer height */
-
+  
   position: relative;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 button {
   cursor: pointer;
@@ -32,17 +33,23 @@ button {
 }
 img {
   width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 a {
   text-decoration: none;
   color: var(--link-color);
 }
+input {
+  border: none;
+  outline: none;
+  padding: 8px;
+}
 #page-container {
   width: 100%;
   min-height: 100vh;
   position: relative;
-
+  
   display: flex;
   flex-direction: column;
 }
@@ -50,34 +57,92 @@ a {
 /* Header */
 #header {
   width: 100%;
-  height: fit-content;
-
+  min-height: fit-content;
+  
   display: flex;
   flex-direction: column;
 }
 #upper-container {
   width: 100%;
   height: 100px;
-
+  
   background: var(--header-bg-color);
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 300px;
 }
+#logo-container {
+  position: relative;
+  height: 100%;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#logo-container #logo-txt {
+  position: relative;
+  right: 10px;
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+#search-container {
+  min-width: 460px;
+  height: 100%;
+  padding: 10px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#search-container input {
+  position: relative;
+  
+  width: 100%;
+  height: 36px;
+}
+#admin-container {
+  width: 200px;
+  height: 100%;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+#admin-container span{
+  width: 40px;
+  height: 40px;
+  margin: 4px;
+  border-radius: 50%;
+  overflow: hidden;
+  
+  display: inline-block;
+}
+#admin-container span img {
+  cursor: pointer;
+}
+
 #navbar {
   width: 100%;
   height: 50px;
   padding: 12px;
-
+  
   background: var(--navbar-bg-color);
-
+  
   display: flex;
   align-items: center;
 }
 #navbar ul {
   width: 100%;
-
+  
   display: flex;
   justify-content: center;
   gap: 20px;
-
+  
   list-style-type: none;
 }
 #navbar ul li {
@@ -97,26 +162,27 @@ a {
   width: 34px;
   height: 34px;
   padding: 6px;
-
+  
   background-color: #fff;
   border-radius: 50%;
-
+  
   position: relative;
   right: 10px;
 }
 
-main{
-      width: 100%;
-      height: 100vh;
+/* Main */
+main {
+  width: 100%;
+  height: 100vh;
 }
 
 /* Footer */
 #footer {
   width: 100%;
   height: 300px;
-
+  
   background-color: var(--primary-color);
-
+  
   position: absolute;
   bottom: 0;
   display: flex;
