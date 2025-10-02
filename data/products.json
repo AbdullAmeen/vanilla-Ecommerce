@@ -1,1 +1,53 @@
- 
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Air Jordan 1",
+      "price": 129.99,
+      "image": "shoe1.jpg",
+      "productId": "124"
+},
+{
+      "id": 2,
+      "name": "Sony WH-1000XM4",
+      "price": 299.99,
+      "image": "earphones1.jpg",
+      "productId": "127"
+    },
+    {
+      "id": 3,
+      "name": "Macbook Pro 16",
+      "price": 1199.99,
+      "image": "laptop1.jpg",
+      "productId": "168"
+    },
+    {
+      "id": 4,
+      "name": "iPhone 13",
+      "price": 999.99,
+      "image": "phone1.jpg",
+      "productId": "169"
+    },
+    {
+      "id": 5,
+      "name": "Dumbbell Set",
+      "price": 49.99,
+      "image": "dumbbells1.jpg",
+      "productId": "170"
+    },
+    {
+      "id": 6,
+      "name": "Playstation 5",
+      "price": 499.99,
+      "image": "console1.jpg",
+      "productId": "471"
+    },
+    {
+      "id": 7,
+      "name": "Samsung Galaxy S21",
+      "price": 699.99,
+      "image": "phone2.jpg",
+      "productId": "102"
+    }
+  ]
+}
