@@ -1,50 +1,65 @@
 <!-- # Home page (banner, featured products)  -->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ecommerce Store</title>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css" />
-    <!-- Global styles (header, footer, buttons) -->
-    <link rel="stylesheet" href="css/home.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ecommerce Store</title>
 
-  <body>
-    <div id="header"></div>
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Global styles (header, footer, buttons) -->
+  <link rel="stylesheet" href="css/home.css" />
+</head>
 
-    <main>
-      <section id="banner">
-        <div id="banner-content">
-              <div id="banner-left">
-                    <div>
-                          <img id="banner" src="./images/banner.jpg " alt="hero">
-                        </div>
-                  </div>
-                  <div id="banner-right">
-                      <h1>Shop Your Favorite Shoes</h1>
-                      <p>Shop from the largest collection of shoes. We have everything you need. <br>Up to 70% OFF on all products. Limited Time Only.</p>
-                      <a href="shop.html" class="banner-btn">Shop Now</a>
-                  </div>
+<body>
+  <div id="header"></div>
+
+  <main>
+    <section id="banner">
+      <div id="banner-content">
+        <div id="banner-left">
+          <div>
+            <img id="banner" src="./images/banner.jpg " alt="hero">
+          </div>
         </div>
-        <div id="more-content"></div>
-      </section>
+        <div id="banner-right">
+          <h1>Shop Your Favorite Shoes</h1>
+          <p>Shop from the largest collection of shoes. We have everything you need. <br>Up to 70% OFF on all products.
+            Limited Time Only.</p>
+          <a href="shop.html" class="banner-btn">Shop Now</a>
+        </div>
+      </div>
+      <div id="more-content"></div>
+    </section>
 
-      <section id="products">
-            <div id="products-content">
-                  <h1>Featured Products</h1>
-                  <div id="cards-container">
-                  </div>
-            </div>
-      </section>
-    </main>
+    <!-- Featured Products -->
+    <section id="products">
+      <div id="products-content">
+        <h1>Featured Products</h1> <!-- Heading for the section -->
+        <div id="product-card-wrapper">
+          <div class="product-card"></div>
+          <div class="product-card"></div>
+          <div class="product-card"></div>
+          <div class="product-card"></div>
+          <div class="product-card"></div>
+          <div class="product-card"></div>
+          <div class="product-card"></div>
+          <div class="product-card"></div>
+          <div class="product-card"></div>
+          <div class="product-card"></div>
+        </div>
+      </div>
+      </div>
+    </section>
+  </main>
 
-    <div id="footer"></div>
+  <div id="footer"></div>
 
-    <!-- JavaScript -->
-    <script src="main.js"></script>
-    <!-- Navbar, footer, common scripts -->
-  </body>
+  <!-- JavaScript -->
+  <script src="main.js"></script>
+  <!-- Navbar, footer, common scripts -->
+</body>
+
 </html>

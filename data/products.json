@@ -2,52 +2,67 @@
   "products": [
     {
       "id": 1,
-      "name": "Air Jordan 1",
-      "price": 129.99,
-      "image": "shoe1.jpg",
-      "productId": "124"
-},
-{
+      "name": "Air jordan 1",
+      "price": "$110",
+      "des": "Men's shoes",
+      "img": "./images/products/shoe/shoe2.jpg",
+      "category": "Nike"
+    },
+    {
       "id": 2,
-      "name": "Sony WH-1000XM4",
-      "price": 299.99,
-      "image": "earphones1.jpg",
-      "productId": "127"
+      "name": "White Sneakers",
+      "price": "$120",
+      "des": "Running shoes",
+      "img": "./images/products/shoe/shoe2.jpg",
+      "category": "Puma"
     },
     {
       "id": 3,
-      "name": "Macbook Pro 16",
-      "price": 1199.99,
-      "image": "laptop1.jpg",
-      "productId": "168"
+      "name": "Air Force 1",
+      "price": "$100",
+      "des": "White men's shoes",
+      "img": "./images/products/shoe/shoe2.jpg",
+      "category": ""
     },
     {
       "id": 4,
-      "name": "iPhone 13",
-      "price": 999.99,
-      "image": "phone1.jpg",
-      "productId": "169"
+      "name": "Dumbells",
+      "price": "$20",
+      "des": "Black 5kg dumbells",
+      "img": "./images/products/gym/gym2.jpg",
+      "category": "Gym equipment"
     },
     {
       "id": 5,
-      "name": "Dumbbell Set",
-      "price": 49.99,
-      "image": "dumbbells1.jpg",
-      "productId": "170"
+      "name": "White and Blue shirts",
+      "price": "$30",
+      "des": "Desol shirts offer",
+      "img": "./images/products/shirt/shirt1.jpg",
+      "category": "Men Clothing"
     },
     {
       "id": 6,
-      "name": "Playstation 5",
-      "price": 499.99,
-      "image": "console1.jpg",
-      "productId": "471"
+      "name": "Off Green Shirt",
+      "price": "$12",
+      "des": "Desol shirts offer",
+      "img": "./images/products/shirt/shirt2.jpg",
+      "category": "Men Clothing"
     },
     {
       "id": 7,
-      "name": "Samsung Galaxy S21",
-      "price": 699.99,
-      "image": "phone2.jpg",
-      "productId": "102"
+      "name": "White Shirt",
+      "price": "$15",
+      "des": "Desol shirt",
+      "img": "./images/products/shirt/shirt3.jpg",
+      "category": "Men Clothing"
+    },{
+      "id": 8,
+      "name": "White t-shirt",
+      "price": "$20",
+      "des": "Adidas t-shirt",
+      "img": "./images/products/shirt/shirt4.jpg",
+      "category": "Men Clothing"
     }
+
   ]
 }
