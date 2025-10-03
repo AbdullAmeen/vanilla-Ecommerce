@@ -1,68 +1,114 @@
-{
-  "products": [
-    {
-      "id": 1,
-      "name": "Air jordan 1",
-      "price": "$110",
-      "des": "Men's shoes",
-      "img": "./images/products/shoe/shoe2.jpg",
-      "category": "Nike"
-    },
-    {
-      "id": 2,
-      "name": "White Sneakers",
-      "price": "$120",
-      "des": "Running shoes",
-      "img": "./images/products/shoe/shoe2.jpg",
-      "category": "Puma"
-    },
-    {
-      "id": 3,
-      "name": "Air Force 1",
-      "price": "$100",
-      "des": "White men's shoes",
-      "img": "./images/products/shoe/shoe2.jpg",
-      "category": ""
-    },
-    {
-      "id": 4,
-      "name": "Dumbells",
-      "price": "$20",
-      "des": "Black 5kg dumbells",
-      "img": "./images/products/gym/gym2.jpg",
-      "category": "Gym equipment"
-    },
-    {
-      "id": 5,
-      "name": "White and Blue shirts",
-      "price": "$30",
-      "des": "Desol shirts offer",
-      "img": "./images/products/shirt/shirt1.jpg",
-      "category": "Men Clothing"
-    },
-    {
-      "id": 6,
-      "name": "Off Green Shirt",
-      "price": "$12",
-      "des": "Desol shirts offer",
-      "img": "./images/products/shirt/shirt2.jpg",
-      "category": "Men Clothing"
-    },
-    {
-      "id": 7,
-      "name": "White Shirt",
-      "price": "$15",
-      "des": "Desol shirt",
-      "img": "./images/products/shirt/shirt3.jpg",
-      "category": "Men Clothing"
-    },{
-      "id": 8,
-      "name": "White t-shirt",
-      "price": "$20",
-      "des": "Adidas t-shirt",
-      "img": "./images/products/shirt/shirt4.jpg",
-      "category": "Men Clothing"
-    }
-
-  ]
-}
+[
+  {
+    "id": 1,
+    "name": "Air jordan 1",
+    "price": "$174.99",
+    "des": "Black and Gold Air jordan 1 high OG",
+    "img": "../images/products/shoe/shoe2.avif",
+    "category": "Nike"
+  },
+  {
+    "id": 2,
+    "name": "White Sneakers",
+    "price": "$120.00",
+    "des": "Running shoes",
+    "img": "./images/products/shoe/shoe1.jpg",
+    "category": "Puma"
+  },
+  {
+    "id": 3,
+    "name": "Air Force 1",
+    "price": "$100.00",
+    "des": "White men's shoes",
+    "img": "./images/products/shoe/shoe3.avif",
+    "category": "Nike"
+  },
+  {
+    "id": 4,
+    "name": "Dumbells",
+    "price": "$20",
+    "des": "Black 5kg dumbells",
+    "img": "./images/products/gym/gym2.jpg",
+    "category": "Gym equipment"
+  },
+  {
+    "id": 5,
+    "name": "White and Blue shirts",
+    "price": "$39.99",
+    "des": "Desol shirts offer",
+    "img": "./images/products/shirt/shirt1.webp",
+    "category": "Men Clothing"
+  },
+  {
+    "id": 6,
+    "name": "Off Green Shirt",
+    "price": "$20.00",
+    "des": "Men large Desol shirts offer green",
+    "img": "./images/products/shirt/shirt2.webp",
+    "category": "Men Clothing"
+  },
+  {
+    "id": 7,
+    "name": "White Shirt",
+    "price": "$25.00",
+    "des": "Men large Desol shirt white",
+    "img": "./images/products/shirt/shirt3.webp",
+    "category": "Men Clothing"
+  },
+  {
+    "id": 8,
+    "name": "White t-shirt",
+    "price": "$20.00",
+    "des": "New Adidas printed t-shirt White",
+    "img": "./images/products/shirt/shirt4.webp",
+    "category": "Men Clothing"
+  },
+  {
+    "id": 9,
+    "name": "Apple headphone Max",
+    "price": "$544.99",
+    "des": "Apple's new headphone offer 40%, limited offer",
+    "img": "./images/products/earphone/earphone1.webp",
+    "category": "Headphones"
+  },
+  {
+    "id": 10,
+    "name": "Sony Earbuds",
+    "price": "$329.99",
+    "des": "Black Sony WF-1000XM5 earbuds, limited stock",
+    "img": "./images/products/earphone/earphone2.webp",
+    "category": "Headphones"
+  },
+  {
+    "id": 11,
+    "name": "Samsung Galaxy Z Fold6",
+    "price": "$1899.99",
+    "des": "Samsung Z fold6 Green 512gb, limited stock",
+    "img": "./images/products/device/device1.webp",
+    "category": "Mobile Phone"
+  },
+  {
+    "id": 12,
+    "name": "Apple iphone 17 pro max",
+    "price": "$1999.99",
+    "des": "2 TB I phone 17 pro max White",
+    "img": "./images/products/device/device2.jpg",
+    "category": "Mobile Phone"
+  },
+  {
+    "id": 13,
+    "name": "Apple iPhone 17 ",
+    "price": "$799.99",
+    "des": "256gb I phone 17, new edition on sale",
+    "img": "./images/products/device/device3.jpg",
+    "category": "Mobile Phone"
+  },
+  {
+    "id": 14,
+    "name": "Samsung Galaxy S23",
+    "price": "$599.99",
+    "des": "8GB ram 512 gb storage Samsung Galaxy S23",
+    "img": "./images/products/device/device4.jpg",
+    "category": "Mobile Phone"
+  }
+]

@@ -74,6 +74,7 @@
 
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 #more-cart #more-cart-img {
   height: 100%;
@@ -143,7 +144,7 @@
 .product-card {
   width: 300px;
   position: relative;
-  background: #fffffc;
+  background: hsl(195, 100%, 99%);
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
   overflow: hidden;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
@@ -161,6 +162,7 @@
   height: 240px;
   overflow: hidden;
   position: relative;
+  padding: 10px;
 }
 
 .product-image img {
