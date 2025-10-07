@@ -1,6 +1,6 @@
 [
   {
-    "id": 1,
+    "productID": "e123",
     "name": "Air jordan 1",
     "price": "$174.99",
     "des": "Black and Gold Air jordan 1 high OG",
@@ -8,7 +8,7 @@
     "category": "Nike"
   },
   {
-    "id": 2,
+    "productID": "e123",
     "name": "White Sneakers",
     "price": "$120.00",
     "des": "Running shoes",
@@ -16,7 +16,7 @@
     "category": "Puma"
   },
   {
-    "id": 3,
+    "productID": "e123",
     "name": "Air Force 1",
     "price": "$100.00",
     "des": "White men's shoes",
@@ -24,7 +24,7 @@
     "category": "Nike"
   },
   {
-    "id": 4,
+    "productID": "e123",
     "name": "Dumbells",
     "price": "$20",
     "des": "Black 5kg dumbells",
@@ -32,7 +32,7 @@
     "category": "Gym equipment"
   },
   {
-    "id": 5,
+    "productID": "e123",
     "name": "White and Blue shirts",
     "price": "$39.99",
     "des": "Desol shirts offer",
@@ -40,7 +40,7 @@
     "category": "Men Clothing"
   },
   {
-    "id": 6,
+    "productID": "e123",
     "name": "Off Green Shirt",
     "price": "$20.00",
     "des": "Men large Desol shirts offer green",
@@ -48,7 +48,7 @@
     "category": "Men Clothing"
   },
   {
-    "id": 7,
+    "productID": "e123",
     "name": "White Shirt",
     "price": "$25.00",
     "des": "Men large Desol shirt white",
@@ -56,7 +56,7 @@
     "category": "Men Clothing"
   },
   {
-    "id": 8,
+    "productID": "e123",
     "name": "White t-shirt",
     "price": "$20.00",
     "des": "New Adidas printed t-shirt White",
@@ -64,7 +64,7 @@
     "category": "Men Clothing"
   },
   {
-    "id": 9,
+    "productID": "e123",
     "name": "Apple headphone Max",
     "price": "$544.99",
     "des": "Apple's new headphone offer 40%, limited offer",
@@ -72,7 +72,7 @@
     "category": "Headphones"
   },
   {
-    "id": 10,
+    "productID": "e123",
     "name": "Sony Earbuds",
     "price": "$329.99",
     "des": "Black Sony WF-1000XM5 earbuds, limited stock",
@@ -80,7 +80,7 @@
     "category": "Headphones"
   },
   {
-    "id": 11,
+    "productID": "e123",
     "name": "Samsung Galaxy Z Fold6",
     "price": "$1899.99",
     "des": "Samsung Z fold6 Green 512gb, limited stock",
@@ -88,7 +88,7 @@
     "category": "Mobile Phone"
   },
   {
-    "id": 12,
+    "productID": "e123",
     "name": "Apple iphone 17 pro max",
     "price": "$1999.99",
     "des": "2 TB I phone 17 pro max White",
@@ -96,7 +96,7 @@
     "category": "Mobile Phone"
   },
   {
-    "id": 13,
+    "productID": "e123",
     "name": "Apple iPhone 17 ",
     "price": "$799.99",
     "des": "256gb I phone 17, new edition on sale",
@@ -104,7 +104,7 @@
     "category": "Mobile Phone"
   },
   {
-    "id": 14,
+    "productID": "e123",
     "name": "Samsung Galaxy S23",
     "price": "$599.99",
     "des": "8GB ram 512 gb storage Samsung Galaxy S23",
