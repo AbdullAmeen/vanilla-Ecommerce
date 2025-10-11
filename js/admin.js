@@ -1,7 +1,8 @@
-async function fetchProducts() {
+async function fetchGetProducts() {
   try {
     const response = await fetch("data/products.json");
-    const data = await response.json();
+    const dataBox = await response.json();
+    const data = dataBox.products;
 
     const totalItemDisplay = document.querySelector("#total-items");
     totalItemDisplay.textContent = data.length;
@@ -10,14 +11,14 @@ async function fetchProducts() {
     const getInput = document.querySelector(".get-input-container input");
     const getBtn = document.querySelector("#get-btn");
     const returnGetDiv = document.querySelector(".return-get");
-    
+
     getBtn.addEventListener("click", (event) => {
       event.preventDefault();
       try {
         if (getInput.value == "" || getInput.value <= 0) return;
         index = getInput.value - 1;
         getInput.value = "";
-        
+
         returnGetDiv.innerHTML = `  
         <div class="product-image">
         <img src="${data[index].img}" alt="${data[index].category}">
@@ -35,35 +36,58 @@ async function fetchProducts() {
         </div>
         <p class="productID">#Product ID :${data[index].productID}</p>    
         <p class="product-id">ID : ${index + 1}</p>    
+        <p class="product-id"> delelteID : ${data[index].id}</p>    
         </div>`;
       } catch (error) {
         returnGetDiv.innerHTML = `<h1>Product not found</h1>`;
       }
     });
-    
-    // edit item function
-    const editInput = document.querySelector(".edit-input-container input");
-    const editBtn = document.querySelector("#edit-btn");
-    const returnEditDiv = document.querySelector(".return-edit");
-    const editForm = document.querySelector(".edit-form");
-
-    editBtn.addEventListener("click", (event) => {
-      event.preventDefault();
-      try {
-        if (editInput.value == "" || editInput.value <= 0) return;
-        index = editInput.value - 1;
-        editInput.value = "";
-        console.log(data[index].name);   
-      } catch (error) {
-        editForm.style.display = "none";
-        returnEditDiv.innerHTML = `<h1>Product not found</h1>`;
-      }
-    }
-    );
-
-
   } catch (error) {
     console.error("Error fetching products:", error);
   }
 }
-fetchProducts();
+fetchGetProducts();
+
+// fetch post products (adding products).
+
+document.addEventListener("DOMContentLoaded", () => {
+  const postForm = document.querySelector("#postForm");
+
+  if (!postForm) {
+    console.error("Form element not found");
+    return;
+  }
+
+  postForm.addEventListener("submit", async (event) => {
+    event.preventDefault();
+
+    // your code continues here...
+
+    const name = document.querySelector("#itemName").value;
+    const catg = document.querySelector("#itemCategory").value;
+    const des = document.querySelector("#itemDes").value;
+    const price = document.querySelector("#itemPrice").value;
+    const imgUrl = document.querySelector("#itemImg").value;
+    const productID = "e123";
+
+    if (!name || !catg || !des || !price || !imgUrl) return;
+    const newProduct = { productID, name, price, des, imgUrl, catg };
+
+    await fetch("http://localhost:3000/products", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(newProduct),
+    });
+  });
+});
+
+// fetch delete products (deleting products).
+const DeleteBtn = document.querySelector("#delete-btn");
+async function deletProduct() {
+  let id = document.querySelector("#itemID").value;
+  await fetch(`http://localhost:3000/products/${id}`, {
+    method: "DELETE",
+  });
+}
+
+DeleteBtn.addEventListener("click", deletProduct);

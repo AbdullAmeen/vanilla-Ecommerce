@@ -316,3 +316,25 @@
     justify-content: center;
   }
 }
+
+
+/* shop page */
+#shop-main{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 30px;
+}
+#shop-main h1{
+      text-align: center;
+      font-size: 4rem;
+      font-family: 'Times New Roman', Times, serif;
+}
+#products-shop {
+  width: 100%;
+  padding: 0 60px 60px 60px;
+
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+}
