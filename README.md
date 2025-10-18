@@ -13,8 +13,7 @@ It does **not use any frameworks or backend**, making it a perfect learning proj
 - **JavaScript** → Makes pages interactive:
   - `shop.js`    → loads product list from `products.json`  
   - `product.js` → shows single product details  
-  - `cart.js`    → adds/removes items, stores cart in localStorage  
-  - `auth.js`    → handles login/signup using localStorage  
+  - `admin.js` → To manage the products
 
 - **JSON** → Acts as a fake database (products & users).  
 - **LocalStorage** → Used instead of a real backend for cart and user sessions.  
@@ -26,10 +25,7 @@ It does **not use any frameworks or backend**, making it a perfect learning proj
 ✅ Home page with featured products  
 ✅ Shop page with dynamic product listing (from JSON)  
 ✅ Product details page (with query parameter `?id=`)  
-✅ Add to Cart + Cart management (localStorage)  
-✅ Checkout form validation  
-✅ Login & Signup (simulated with localStorage)   
-
+✅ Admin Page to control Products  
 ---
 
 ## Notes
@@ -43,12 +39,11 @@ It does **not use any frameworks or backend**, making it a perfect learning proj
 
 ## How to Run
 
-1. Download or clone this repo.  
-2. Open `index.html` in your browser.  
-3. Navigate between pages normally.  
-4. Products and users load from the `data/` folder.  
-
-👉 No server needed (runs directly in the browser).  
+1. Download or clone this repo. 
+2. Run json-server.
+3. Open `index.html` in your browser.  
+4. Navigate between pages normally.  
+5. Products and users load from the `data/` folder.  
 
 ---
 

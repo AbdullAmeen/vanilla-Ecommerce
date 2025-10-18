@@ -18,6 +18,7 @@ async function fetchGetProducts() {
         if (getInput.value == "" || getInput.value <= 0) return;
         index = getInput.value - 1;
         getInput.value = "";
+        
 
         returnGetDiv.innerHTML = `  
         <div class="product-image">
@@ -36,7 +37,7 @@ async function fetchGetProducts() {
         </div>
         <p class="productID">#Product ID :${data[index].productID}</p>    
         <p class="product-id">ID : ${index + 1}</p>    
-        <p class="product-id"> delelteID : ${data[index].id}</p>    
+        <p class="product-id"> edit & delete ID : ${data[index].id}</p>    
         </div>`;
       } catch (error) {
         returnGetDiv.innerHTML = `<h1>Product not found</h1>`;
@@ -61,17 +62,16 @@ document.addEventListener("DOMContentLoaded", () => {
   postForm.addEventListener("submit", async (event) => {
     event.preventDefault();
 
-    // your code continues here...
 
     const name = document.querySelector("#itemName").value;
-    const catg = document.querySelector("#itemCategory").value;
+    const category = document.querySelector("#itemCategory").value;
     const des = document.querySelector("#itemDes").value;
     const price = document.querySelector("#itemPrice").value;
-    const imgUrl = document.querySelector("#itemImg").value;
+    const img = document.querySelector("#itemImg").value;
     const productID = "e123";
 
-    if (!name || !catg || !des || !price || !imgUrl) return;
-    const newProduct = { productID, name, price, des, imgUrl, catg };
+    if (!name || !category || !des || !price || !img) return;
+    const newProduct = { productID, name, price, des, img, category};
 
     await fetch("http://localhost:3000/products", {
       method: "POST",
@@ -91,3 +91,24 @@ async function deletProduct() {
 }
 
 DeleteBtn.addEventListener("click", deletProduct);
+
+// fetch items for edit (put).
+const putForm = document.querySelector("#putForm");
+putForm.addEventListener("submit", async (event) => {
+  event.preventDefault();
+  const id = document.querySelector("#putId").value;
+  const name = document.querySelector("#putName").value;
+  const category = document.querySelector("#putCategory").value;
+  const des = document.querySelector("#putDes").value;
+  const price = document.querySelector("#putPrice").value;
+  const img = document.querySelector("#putImg").value;
+  const productID = "e123";
+  if(!id, !name, !category, !des, !price, !img) return;
+  const updateUser = { name, category, des, price, img, productID };
+
+  await fetch(`http://localhost:3000/products/${id}`, {
+    method: "PUT",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(updateUser),
+  });
+})

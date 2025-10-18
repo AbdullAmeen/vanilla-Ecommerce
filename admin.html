@@ -19,30 +19,39 @@
             <section id="admin">
                   <div class="add-item">
                         <h1>Add Item</h1>
-                        <form id="postForm">
+                        <form id="postForm" autocomplete="off">
                               <input type="text" id="itemName" placeholder="Enter item name">
                               <input type="text" id="itemCategory" placeholder="Enter item category">
                               <input type="text" id="itemDes" placeholder="Enter item description">
-                              <input type="text" id="itemPrice" placeholder="Enter item price">
+                              <input type="text" id="itemPrice" placeholder="Enter item price ($)">
                               <input type="text" id="itemImg" placeholder="Enter item image url">
                               <button type="submit" id="add-btn">Add</button>
                         </form>
                   </div>
                   <div class="get-item">
                         <h1>Get Item </h1>
-                        <form class="get-input-container">
+                        <form class="get-input-container" autocomplete="off">
                               <input type="number" placeholder="Enter Item ID to get item">
                               <button id="get-btn" type="submit">Get</button>
                         </form>
 
                         <div class="return-get"></div>
-                        <form id="deleteForm">
+                        <form id="deleteForm" autocomplete="off">
                               <input type="text" id="itemID" placeholder="Copy item deleteID ">
                               <button type="submit" id="delete-btn">Delete</button>
                         </form>
                   </div>
                   <div class="edit-item">
                         <h1>Edit Item</h1>
+                        <form id="putForm" autocomplete="off">
+                              <input type="text" id="putId" placeholder="Enter Item ID to edit item">
+                              <input type="text" id="putName" placeholder="Enter item name">
+                              <input type="text" id="putCategory" placeholder="Enter item category">
+                              <input type="text" id="putDes" placeholder="Enter item description">
+                              <input type="text" id="putPrice" placeholder="Enter item price ($)">
+                              <input type="text" id="putImg" placeholder="Enter item image url">
+                              <button type="submit" id="edit-btn">Edit</button>
+                        </form>
                   </div>
             </section>
       </main>

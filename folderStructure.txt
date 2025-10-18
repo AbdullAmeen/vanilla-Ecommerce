@@ -2,20 +2,16 @@ ecommerce-website/
 │ 
 ├── index.html       # Home page (banner, featured products) 
 ├── shop.html        # Product listing page 
-├── product.html     # Single product details page 
-├── cart.html        # Shopping cart 
+├── product.html     # Single product details page  
 │ 
 ├── css/          # Stylesheets 
 │ ├── style.css      # Global styles (header ,footer , buttons) 
 │ ├── home.css       # Styles for home page 
 │ ├── shop.css       # Styles for shop page 
-│ ├── product.css # Styles for product page 
-│ └── cart.css       # Styles for cart & checkout 
 │ 
 ├── js/           # JavaScript logic 
 │ ├── main.js        # Navbar, footer, common scripts 
 │ ├── shop.js        # Loads products from JSON into shop.html
-│ ├── product.js     # Shows product details (via ?id= in URL) 
 │ ├── cart.js        # Manages cart (add/remove items, totals) 
 │
 ├── data/         # JSON data (acts like a fake backend) 
