@@ -5,6 +5,14 @@ It does **not use any frameworks or backend**, making it a perfect learning proj
 
 ---
 
+<h1>📷 Screen Shots</h1>
+
+<p align="center">
+  <img src="./docs/1.png" alt="Screenshot 1" width="30%">
+  <img src="./docs/2.png" alt="Screenshot 2" width="30%">
+  <img src="./docs/3.png" alt="Screenshot 3" width="30%">
+</p>
+
 ## ⚙️ How It Works
 
 - **HTML** → Provides the structure (pages like home, shop, product, cart).  
