@@ -135,9 +135,13 @@ input {
   cursor: pointer;
 }
 
+#menu-icon {
+  display: none;
+}
+
+/* nav bar */
 #navbar {
   width: 100%;
-  height: 50px;
   padding: 12px;
 
   background: var(--navbar-bg-color);
@@ -191,14 +195,14 @@ main {
   height: 300px;
 
   background-color: var(--primary-color);
-  
+
   position: absolute;
   bottom: 0;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-footer{
+footer {
   width: 70%;
   height: 100%;
   display: flex;
@@ -207,10 +211,10 @@ footer{
   justify-content: space-between;
   padding: 20px;
 }
-footer >p{
+footer > p {
   font-weight: 500;
 }
-#footer h2{
+#footer h2 {
   font-size: 1.3rem;
   color: rgb(63, 63, 63);
   font-weight: 600;
@@ -223,32 +227,32 @@ footer div {
   align-items: center;
   gap: 30px;
 }
-#footer div img{
+#footer div img {
   width: 26px;
 }
-#footer div .social-link{
+#footer div .social-link {
   display: flex;
   align-items: center;
   gap: 10px;
 }
-#footer div div{
+#footer div div {
   display: flex;
   flex-direction: column;
-    align-items: start;
+  align-items: start;
 }
-#footer div .links{
+#footer div .links {
   display: flex;
   flex-direction: column;
   align-items: start;
   gap: 6px;
 }
-#footer div .links h2{
+#footer div .links h2 {
   margin-bottom: 10px;
 }
 #footer div .links a {
   margin-left: 10px;
 }
-#footer div .links a:hover{
+#footer div .links a:hover {
   text-decoration: underline;
 }
 
@@ -272,3 +276,144 @@ footer div {
     display: none;
   }
 }
+
+@media screen and (max-width: 640px) {
+  body{
+    overflow-x: visible;
+  }
+  #header {
+    width: 100%;
+    min-height: fit-content;
+
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+    position: relative;
+  }
+  #upper-container {
+    width: 100%;
+    height: 100px;
+    padding: 20px;
+
+    background: var(--header-bg-color);
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    /* gap: 300px; */
+  }
+  #logo-container {
+    height: 100%;
+    width: 170px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -44px;
+    left: 50%;
+  }
+  #logo-container #logo-txt{
+    position: relative;
+    top: 0px;
+    right: 25px;
+    font-size: 22px;
+  }
+  #logo-container img{
+    width: 100%;
+    display: none;
+  }
+
+  #search-container {
+    min-width: 460px;
+    height: 100%;
+    padding: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  #search-container input {
+    position: relative;
+    border-radius: 10px;
+
+    width: 90%;
+    height: 36px;
+  }
+  #search-container img {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 34px;
+    cursor: text;
+  }
+  #admin-container {
+    display: none;
+  }
+  #menu-icon {
+    width: 40px;
+    height: 40px;
+    display: block;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  /* nav bar */
+  #navbar {
+    width: 100%;
+    padding: 12px;
+
+    background: var(--navbar-bg-color);
+    
+    display: flex;
+    align-items: center;
+  }
+  
+
+  #navbar ul {
+    height: fit-content;
+    width: 100%;
+    background: var(--navbar-bg-color);
+    padding: 20px;
+    
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+
+    list-style-type: none;
+  }
+#navbar ul.active {
+  display: flex;
+}
+
+  #navbar ul li {
+    padding: 6px;
+    border-bottom: 1px solid transparent;
+  }
+  #navbar ul li:hover {
+    border-bottom: 1px solid #ac9999;
+  }
+  #navbar ul li:hover a {
+    color: var(--link-color-active);
+  }
+  #navbar ul li a.active {
+    color: var(--link-color-active);
+  }
+  #cart-container {
+    width: 34px;
+    height: 34px;
+    padding: 6px;
+    display: flex;
+
+    background-color: #fff;
+    border-radius: 50%;
+
+    position: absolute;
+    right: 20px;
+    top: 34px;
+  }
+}
+
