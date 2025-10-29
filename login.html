@@ -1,0 +1,69 @@
+<!-- # Home page (banner, featured products)  -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Ecommerce Store</title>
+
+      <!-- CSS -->
+      <link rel="stylesheet" href="css/style.css" />
+      <!-- Global styles (header, footer, buttons) -->
+      <link rel="stylesheet" href="css/home.css" />
+</head>
+
+<body>
+
+      <img src="images/icons/down.svg" alt="icon" id="down-icon" onclick="location.href='index.html'">
+      <main>
+            <div class="login">
+                  <h1>Login</h1>
+                  <form>
+                        <input type="email" placeholder="Email" required>
+                        <input type="password" placeholder="Password" required>
+                        <button type="submit">Login</button>
+                  </form>
+
+                  <p>Don't have an account? <a onclick="handleSignUp()">Register</a></p>
+            </div>
+
+            <div class="signup">
+                  <h1>Sign Up</h1>
+                  <form>
+                        <input type="text" placeholder="Username" required>
+                        <input type="email" placeholder="Email" required>
+                        <input type="password" placeholder="Password" required>
+                        <button type="submit">Sign Up</button>
+                  </form>
+
+                  <p>Already have an account? <a onclick=" handleLogin()">Login</a></p>
+            </div>
+
+            <div class="login-failed">
+                  <p>Invalid username or password. Please try again.</p>
+                  <a onclick="handleLogin()">Login</a>
+
+                  <p>Don't have an account? <a onclick="handleSignUp()">Register</a></p>
+            </div>
+            <div class="login-success">
+                  <p>Login successful</p>
+                  <a href="index.html">Go to Home</a>
+            </div>
+            <div class="signup-success">
+                  <p>Sign up successful</p>
+                  <a href="index.html">Go to Home</a>
+            </div>
+
+            <link rel="stylesheet" href="./css/login.css">
+      </main>
+
+
+      <div id="footer"></div>
+
+      <!-- JavaScript -->
+      <script src="main.js"></script>
+      <script src="js/login.js"></script>
+</body>
+
+</html>

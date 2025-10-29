@@ -62,7 +62,61 @@ input {
   display: flex;
   flex-direction: column;
   z-index: 100;
+  position: relative;
 }
+#login-container {
+  position: absolute;
+  right: -30%;
+  top: 32px;
+  /* background-color: var(--header-bg-color); */
+  background-color: hsla(0, 0%, 0%, 0.09);
+  padding: 8px 44px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+#login-container::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 10px;
+  width: 28px;
+  height: 28px;
+  background: url(../images/icons/user-white.svg) no-repeat center;
+  background-size: contain;
+  z-index: 2;
+}
+#login-container::after {
+  content: "";
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  width: 12px;
+  height: 12px;
+  background: url(../images/icons/down-white.svg) no-repeat center;
+  background-size: contain;
+  z-index: 2;
+  transition: transform 0.25s ease; 
+}
+#login-container p{
+  color: rgb(255, 255, 255);
+}
+
+#login-container:hover{
+  background-color: hsl(0, 0%, 93%);
+}
+#login-container:hover p{
+  color: black;
+}
+#login-container:hover::before{
+  background: url(../images/icons/user.svg) no-repeat center;
+  background-size: contain;
+}
+#login-container:hover::after{
+  background: url(../images/icons/down.svg) no-repeat center;
+  background-size: contain;
+  transform: rotate(180deg);
+}
+
 #upper-container {
   width: 100%;
   height: 100px;
@@ -90,7 +144,7 @@ input {
   color: var(--primary-color);
 }
 #search-container {
-  min-width: 460px;
+  min-width: 480px;
   height: 100%;
   padding: 10px;
 
@@ -101,6 +155,7 @@ input {
 }
 #search-container input {
   position: relative;
+  border-radius: 8px;
 
   width: 100%;
   height: 36px;

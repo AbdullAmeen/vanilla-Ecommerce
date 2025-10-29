@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "name": "John Doe",
+      "email": "XH4m0@example.com",
+      "password": "password123",
+      "id": "a86c"
+    },
+    {
+      "name": "fast",
+      "email": "fast@gmail.com",
+      "password": "1",
+      "id": "0ea5"
+    },
+    {
+      "name": "Jane Smith",
+      "email": "6lTt5@example.com",
+      "password": "password456",
+      "id": "d1e8"
+    },
+    {
+      "id": "a5c4",
+      "name": "jfsdkl",
+      "email": "kjdf@jdskf",
+      "password": "kdslfdsl"
+    }
+  ]
+}

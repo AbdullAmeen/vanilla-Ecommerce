@@ -38,8 +38,10 @@
   gap: 10px;
   position: relative;
 }
+@import url('https://fonts.googleapis.com/css2?family=Yeserva+One&display=swap');
 #banner-right h1 {
   font-size: 3.5rem;
+  font-family: 'Yeserva One', serif;
   font-weight: 700;
   color: var(--text-color);
 }
@@ -348,6 +350,8 @@
 }
 
 /* shop page */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
 #shop-main {
   display: flex;
   flex-direction: column;
@@ -357,7 +361,7 @@
 #shop-main h1 {
   text-align: center;
   font-size: 4rem;
-  font-family: "Times New Roman", Times, serif;
+  font-family: 'Pacifico', cursive;;
 }
 #products-shop {
   width: 100%;

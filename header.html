@@ -8,6 +8,10 @@
             <div id="search-container">
                   <input type="text" placeholder="Search">
                   <img src="./images/icons/search.png" alt="search">
+
+                  <div id="login-container" onclick="location.href='login.html'">
+                        <p>Login</p>
+                  </div>
             </div>
             <div id="admin-container">
                   <span onclick="location.href='admin.html'"><img src="./images/icons/admin.webp" alt="admin"></span>
@@ -32,7 +36,7 @@
 </header>
 
 <script>
-      
+
       function toggleMenu() {
             var navbar = document.querySelector("#navbar ul");
             navbar.classList.toggle("active");
